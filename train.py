@@ -16,7 +16,7 @@ from model.Ours import Ours as PCFNet
 parser = argparse.ArgumentParser(description="PyTorch BasicIRSTD train")
 parser.add_argument("--model_names", default=['PCFNet'], type=list,
                     help="'ACM', 'ALCNet', 'DNANet', 'ISNet', 'UIUNet', 'RDIAN', 'RISTDnet'")
-parser.add_argument("--dataset_names", default=['NUAA','NUDT','IRSTD-1K'], type=list)
+parser.add_argument("--dataset_names", default=['NUAA-SIRST','NUDT-SIRST','IRSTD-1K'], type=list)
 
 parser.add_argument("--optimizer_name", default='Adam', type=str, help="optimizer name: AdamW, Adam, Adagrad, SGD")
 parser.add_argument("--epochs", default=1000, type=int, help="epoch")
